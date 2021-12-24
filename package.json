@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-personal-sass",
+  "version": "1.0.0",
+  "description": "Proyecto-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camila-Pletscher/Portfolio-personal-SASS.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Camila-Pletscher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Camila-Pletscher/Portfolio-personal-SASS/issues"
+  },
+  "homepage": "https://github.com/Camila-Pletscher/Portfolio-personal-SASS#readme"
+}

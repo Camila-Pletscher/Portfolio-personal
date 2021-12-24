@@ -1,0 +1,61 @@
+
+#buttonIndex:hover {
+    width: $ancho-total;
+}
+
+#buttonIndex {
+
+    background-color: $fucsia;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 30px;
+    width: 80%;
+
+        a {
+            text-decoration: none;
+            color: $blanco;
+            font-family: $gorditasReg;
+        }            
+}
+
+#bodyIndex {
+    background-color: $lila;
+    padding: 3% 3% 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ilustPersonal {
+    width: $ancho-total;
+    margin-top: 1em;
+}
+
+h1 {
+    font-family: $gorditasReg;
+    color: $fucsia;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+#descripcionIndex {
+    font-family: $regular;
+    font-size: 1.2em;
+    padding: 1.5%;
+    text-align: center;
+}
+
+.fondo__foot {
+    background-color: $lila;
+    height: 3%;
+
+        div a &-img {
+                width: 50%;
+                margin-top: 1em;
+                margin-bottom: 1em;    
+        }
+}

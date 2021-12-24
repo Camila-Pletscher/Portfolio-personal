@@ -1,0 +1,55 @@
+
+.footer__pages {
+    background-color: #E5E5E5;
+
+    &-preg {        
+            font-family: Poppins-Light;
+            font-size: 1.5em;
+            
+    }
+
+    &-button {
+        background-color: #F677A3;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: 0;
+        margin-bottom: 2%; 
+
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-family: Poppins-Regular;
+
+                
+            }
+            
+    }
+
+    
+}
+
+.footer__pages-button:hover {
+    background-color: #74D3C5;
+}
+
+.icon-pag {
+    width: 50%;
+}
+
+
+.derechos__contenedor {
+    background-color: #706D6D;
+
+    &-copy {
+    font-family: Poppins-Light;
+    font-size: 12px;
+    background-color: #706D6D ;
+    color: #FFFFFF;
+    text-align: center;
+    }
+}
+
+
+
+

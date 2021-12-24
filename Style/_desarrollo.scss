@@ -1,0 +1,68 @@
+
+.cont__logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+
+    a &-pag {
+        background-color: $lila;
+        width: 100%;
+        animation-name: logo-color;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+    } 
+}
+
+#ilust-dw {
+    width: $ancho-total;
+}
+
+h2 {
+    @include titulos();
+}
+
+.subtitulosDesarrolloDisenio {
+    font-family: $regular;
+    color: $lila;
+    font-size: 26px;
+    text-align: center;
+}
+
+.textosDesarrolloDisenio {
+    font-family: $extra-light;
+    text-align: center;
+    
+}
+
+
+.desarrollo__button {
+    background-color:$verde;
+    color: $blanco;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 0;
+    align-self: center;
+    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
+    width: 90%;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-family: $regular;
+        color: $blanco;
+    }
+}
+
+.desarrollo__button:hover {
+    width: $ancho-total;
+}
+
+.imgsProyectosDW {
+    width: $ancho-total;
+}
+
+

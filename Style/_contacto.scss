@@ -1,0 +1,52 @@
+#imgContacto {
+    width: $ancho-total;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+
+    p {
+        font-family: $light;
+        font-size: 18px;
+    }
+
+    label {
+        font-family: $medium;
+        margin: 2% 0%;
+    }
+    
+    input {
+        font-family: $light;
+        border-radius: 25px;
+        padding: 2%;
+        color: darkgrey;
+        border: 1px solid;
+    }
+
+    textarea {
+        font-family: $light;
+        color: #706D6D;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 2%;
+    }
+
+    #enviar {
+        background-color: $fucsia;
+        color: $blanco;
+        width: 50%;
+        margin: 2% 25%;
+    }
+    
+    #enviar:hover {
+        background-color: $verde;
+    }
+
+
+}
+
+
+

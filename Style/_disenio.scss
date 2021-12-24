@@ -1,0 +1,145 @@
+#ilustDisenio {
+    width: $ancho-total;
+}
+
+h2 {
+    @include titulos();
+}
+
+div {
+
+    .disenio__subtitulos {
+        font-family: $regular;
+        color: $lila;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .disenio__textos-proyectos {
+        font-family: $extra-light;
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .textosDesarrolloDisenio {
+        font-family: $extra-light;
+        text-align: center;
+        
+    }
+
+    .disenio__imgs-proyectos {
+        width: $ancho-total;
+        transition: opacity 1s;
+    }
+
+    .disenio__aclaraciones {
+            font-family: $extra-light;
+            font-size: 12px;
+            text-align: center;
+        
+    }
+
+    .disenio__button-proyecto {
+        background-color: $verde;
+        color: $blanco;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: 0;
+        align-self: center;
+        box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
+        width: 80%;
+
+            a {
+                text-decoration: none;
+                text-align: center;
+                font-family: $regular;
+                color: $blanco;
+            }
+    }
+    
+    
+
+}
+
+.disenio__button-proyecto:hover {
+    width: $ancho-total;
+}
+
+
+.disenio__imgs-proyectos:hover {
+    opacity: 0.5;
+}
+
+#imgProyectoDestacado {
+    width: $ancho-total;
+    margin: 2%;
+
+}
+
+#imgProyectoDestacado:hover {
+    opacity: 0.8;
+}
+
+
+#tituloDestacadoDG {
+    font-family: $regular;
+    color: $lila;
+    font-size: 34px;
+    margin: 1% 20%;
+    text-align: center;
+}
+
+#textoDestacado {
+    font-family: $extra-light;
+    font-size: 20px;
+    margin: 2% 20%;
+    text-align: center;
+}
+
+#buttonDestacado {
+    background-color: $fucsia;
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: 0;
+    margin-top: 1%;
+    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
+    width: 70%;
+
+    a {
+        font-family: $regular;
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+#buttonDestacado:hover {
+    width: $ancho-total;
+}
+
+
+#disenio__button {
+    background-color: $verde;
+    color: $blanco;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 0;
+    align-self: center;
+    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
+    width: 70%;
+    
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-family: Poppins-Regular;
+            color: $blanco;
+        }
+}
+
+#disenio__button:hover {
+    width: 80%;
+}
