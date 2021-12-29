@@ -1,5 +1,12 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
+
 #ilustDisenio {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 h2 {
@@ -9,53 +16,48 @@ h2 {
 div {
 
     .disenio__subtitulos {
-        font-family: $regular;
-        color: $lila;
+        font-family: map-get($fonts, "regular");
+        color: map-get($colores, "lila");
         font-size: 26px;
         text-align: center;
     }
 
     .disenio__textos-proyectos {
-        font-family: $extra-light;
+        font-family: map-get($fonts, "e-light");
         font-size: 16px;
         text-align: center;
         margin: 10px 0px;
     }
 
     .textosDesarrolloDisenio {
-        font-family: $extra-light;
+        font-family: map-get($fonts, "e-light");
         text-align: center;
         
     }
 
     .disenio__imgs-proyectos {
-        width: $ancho-total;
+        width: $anchoMax;
         transition: opacity 1s;
     }
 
     .disenio__aclaraciones {
-            font-family: $extra-light;
+            font-family: map-get($fonts, "e-light");
             font-size: 12px;
             text-align: center;
         
     }
 
     .disenio__button-proyecto {
-        background-color: $verde;
-        color: $blanco;
+        @extend .button;
+        background-color: map-get($colores, "verde");
         border-radius: 25px;
         padding: 10px 20px;
         margin-top: 20px;
-        border: 0;
-        align-self: center;
-        box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
         width: 80%;
+        
 
             a {
-                text-decoration: none;
-                text-align: center;
-                font-family: $regular;
-                color: $blanco;
+                @extend .button-a
             }
     }
     
@@ -64,7 +66,7 @@ div {
 }
 
 .disenio__button-proyecto:hover {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 
@@ -73,7 +75,7 @@ div {
 }
 
 #imgProyectoDestacado {
-    width: $ancho-total;
+    width: $anchoMax;
     margin: 2%;
 
 }
@@ -84,59 +86,50 @@ div {
 
 
 #tituloDestacadoDG {
-    font-family: $regular;
-    color: $lila;
+    font-family: map-get($fonts, "regular");
+    color: map-get($colores, "lila");
     font-size: 34px;
     margin: 1% 20%;
     text-align: center;
 }
 
 #textoDestacado {
-    font-family: $extra-light;
+    font-family: map-get($fonts, "e-light");
     font-size: 20px;
     margin: 2% 20%;
     text-align: center;
 }
 
 #buttonDestacado {
-    background-color: $fucsia;
+    @extend .button; 
+    background-color: map-get($colores, "fucsia");
     border-radius: 30px;
     padding: 15px 30px;
-    border: 0;
     margin-top: 1%;
-    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
     width: 70%;
+    
 
     a {
-        font-family: $regular;
-        color: $blanco;
-        text-decoration: none;
-        font-size: 1em;
-        text-align: center;
+        @extend .button-a; 
     }
 }
 
 #buttonDestacado:hover {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 
 #disenio__button {
-    background-color: $verde;
-    color: $blanco;
+    @extend .button; 
+    background-color: map-get($colores, "verde");
     border-radius: 25px;
     padding: 10px 20px;
     margin-top: 20px;
-    border: 0;
-    align-self: center;
-    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
     width: 70%;
     
+    
         a {
-            text-decoration: none;
-            text-align: center;
-            font-family: Poppins-Regular;
-            color: $blanco;
+            @extend .button-a;
         }
 }
 

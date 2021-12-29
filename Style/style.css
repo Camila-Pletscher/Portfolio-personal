@@ -15,7 +15,7 @@
 #buttonIndex a {
   text-decoration: none;
   color: #FFFFFF;
-  font-family: Poppins-Regular;
+  font-family: Gorditas-Regular;
 }
 
 #bodyIndex {
@@ -110,7 +110,6 @@ h2 {
 }
 
 .textosQuienSoy {
-  font-family: Poppins-ExtraLight;
   font-size: 17px;
   margin: 2% 0 10%;
   text-align: left;
@@ -179,7 +178,7 @@ h2 {
 }
 
 .textosQuienSoy {
-  font-family: Poppins-ExtraLight;
+  font-family: Poppins-Extralight;
   font-size: 17px;
   margin: 2% 0 10%;
   text-align: left;
@@ -263,29 +262,22 @@ h2 {
 }
 
 .subtitulosDesarrolloDisenio {
-  font-family: Gorditas-Regular;
+  font-family: Poppins-Regular;
   color: #C6B5F8;
   font-size: 26px;
   text-align: center;
 }
 
 .textosDesarrolloDisenio {
-  font-family: Poppins-ExtraLight;
+  font-family: Poppins-Extralight;
   text-align: center;
 }
 
 .desarrollo__button {
   background-color: #74D3C5;
-  color: #FFFFFF;
   border-radius: 25px;
   padding: 10px 20px;
   margin-top: 20px;
-  border: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
   width: 90%;
 }
 
@@ -316,21 +308,19 @@ h2 {
 }
 
 div .disenio__subtitulos {
-  font-family: Gorditas-Regular;
+  font-family: Poppins-Regular;
   color: #C6B5F8;
   font-size: 26px;
   text-align: center;
 }
 
 div .disenio__textos-proyectos {
-  font-family: Poppins-ExtraLight;
   font-size: 16px;
   text-align: center;
   margin: 10px 0px;
 }
 
 div .textosDesarrolloDisenio {
-  font-family: Poppins-ExtraLight;
   text-align: center;
 }
 
@@ -341,34 +331,19 @@ div .disenio__imgs-proyectos {
 }
 
 div .disenio__aclaraciones {
-  font-family: Poppins-ExtraLight;
   font-size: 12px;
   text-align: center;
 }
 
 div .disenio__button-proyecto {
   background-color: #74D3C5;
-  color: #FFFFFF;
   border-radius: 25px;
   padding: 10px 20px;
   margin-top: 20px;
-  border: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-  width: 90%;
+  width: 80%;
 }
 
-div .disenio__button-proyecto a {
-  text-decoration: none;
-  text-align: center;
-  font-family: Poppins-Regular;
-  color: #FFFFFF;
-}
-
-div .disenio_button-proyecto:hover {
+.disenio__button-proyecto:hover {
   width: 100%;
 }
 
@@ -386,7 +361,7 @@ div .disenio_button-proyecto:hover {
 }
 
 #tituloDestacadoDG {
-  font-family: Gorditas-Regular;
+  font-family: Poppins-Regular;
   color: #C6B5F8;
   font-size: 34px;
   margin: 1% 20%;
@@ -394,7 +369,6 @@ div .disenio_button-proyecto:hover {
 }
 
 #textoDestacado {
-  font-family: Poppins-ExtraLight;
   font-size: 20px;
   margin: 2% 20%;
   text-align: center;
@@ -404,19 +378,8 @@ div .disenio_button-proyecto:hover {
   background-color: #F677A3;
   border-radius: 30px;
   padding: 15px 30px;
-  border: 0;
   margin-top: 1%;
-  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
   width: 70%;
-}
-
-#buttonDestacado a {
-  font-family: Poppins-Regular;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 1em;
-  text-align: center;
 }
 
 #buttonDestacado:hover {
@@ -425,24 +388,10 @@ div .disenio_button-proyecto:hover {
 
 #disenio__button {
   background-color: #74D3C5;
-  color: #FFFFFF;
   border-radius: 25px;
   padding: 10px 20px;
   margin-top: 20px;
-  border: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
   width: 70%;
-}
-
-#disenio__button a {
-  text-decoration: none;
-  text-align: center;
-  font-family: Poppins-Regular;
-  color: #FFFFFF;
 }
 
 #disenio__button:hover {
@@ -557,6 +506,24 @@ form #enviar:hover {
   max-width: 100%;
 }
 
+.button, .desarrollo__button, div .disenio__button-proyecto, #buttonDestacado, #disenio__button {
+  color: #FFFFFF;
+  border: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
+}
+
+.button-a, div .disenio__button-proyecto a, #buttonDestacado a, #disenio__button a {
+  font-family: Poppins-Regular;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+}
+
 /* clases de bootstrap  inicio */
 .navbar {
   background-color: transparent;
@@ -580,6 +547,10 @@ form #enviar:hover {
 
 .link-pages {
   color: #FFFFFF;
+}
+
+.nav-pages {
+  background-color: #C6B5F8;
 }
 
 /* clases de bootstrap  fin */
@@ -636,10 +607,10 @@ form #enviar:hover {
   h2 {
     font-size: 2.2em;
   }
-  .buttonDesarrolloDisenio {
+  .disenio__button-proyexto {
     width: 95%;
   }
-  .aButtonDesarrolloDisenio {
+  .disenio__button-proyexto a {
     font-size: 0.8em;
   }
   .quienSoy__subtitulo {
@@ -669,9 +640,5 @@ form #enviar:hover {
   h1 {
     font-size: 4.6em;
   }
-}
-
-.nav-pages {
-  background-color: #C6B5F8;
 }
 /*# sourceMappingURL=style.css.map */

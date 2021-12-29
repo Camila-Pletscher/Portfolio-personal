@@ -1,11 +1,17 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
 
 #buttonIndex:hover {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 #buttonIndex {
 
-    background-color: $fucsia;
+    background-color: map-get($colores , "fucsia");
     text-decoration: none;
     border-radius: 25px;
     padding: 10px;
@@ -15,13 +21,13 @@
 
         a {
             text-decoration: none;
-            color: $blanco;
-            font-family: $gorditasReg;
+            color: map-get($colores, "blanco" );
+            font-family: map-get($fonts, "gorditas");
         }            
 }
 
 #bodyIndex {
-    background-color: $lila;
+    background-color: map-get($colores, "lila");;
     padding: 3% 3% 0 3%;
     display: flex;
     flex-direction: column;
@@ -29,13 +35,13 @@
 }
 
 #ilustPersonal {
-    width: $ancho-total;
+    width: $anchoMax;
     margin-top: 1em;
 }
 
 h1 {
-    font-family: $gorditasReg;
-    color: $fucsia;
+    font-family: map-get($fonts, "gorditas");
+    color: map-get($colores, "fucsia");;
     text-align: center;
     font-size: 3rem;
     padding: 0;
@@ -43,14 +49,14 @@ h1 {
 }
 
 #descripcionIndex {
-    font-family: $regular;
+    font-family: map-get($fonts, "regular");
     font-size: 1.2em;
     padding: 1.5%;
     text-align: center;
 }
 
 .fondo__foot {
-    background-color: $lila;
+    background-color: map-get($colores, "lila");;
     height: 3%;
 
         div a &-img {

@@ -1,3 +1,9 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
 
 .cont__logo {
     width: 100px;
@@ -6,7 +12,7 @@
     right: 3%;
 
     a &-pag {
-        background-color: $lila;
+        background-color: map-get($colores, "lila");
         width: 100%;
         animation-name: logo-color;
         animation-duration: 2s;
@@ -17,7 +23,7 @@
 }
 
 #ilust-dw {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 h2 {
@@ -25,44 +31,41 @@ h2 {
 }
 
 .subtitulosDesarrolloDisenio {
-    font-family: $regular;
-    color: $lila;
+    font-family: map-get($fonts, "regular");
+    color: map-get($colores, "lila");
     font-size: 26px;
     text-align: center;
 }
 
 .textosDesarrolloDisenio {
-    font-family: $extra-light;
+    font-family: map-get($fonts, "elight");
     text-align: center;
     
 }
 
 
 .desarrollo__button {
-    background-color:$verde;
-    color: $blanco;
+    @extend .button;
+    background-color: map-get($colores, "verde");
     border-radius: 25px;
     padding: 10px 20px;
     margin-top: 20px;
-    border: 0;
-    align-self: center;
-    box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
     width: 90%;
 
     a {
         text-decoration: none;
         text-align: center;
-        font-family: $regular;
-        color: $blanco;
+        font-family: map-get($fonts, "regular");
+        color: map-get($colores, "blanco");
     }
 }
 
 .desarrollo__button:hover {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 .imgsProyectosDW {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 

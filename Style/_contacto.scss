@@ -1,5 +1,12 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
+
 #imgContacto {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 form {
@@ -9,17 +16,17 @@ form {
     width: 80%;
 
     p {
-        font-family: $light;
+        font-family: map-get($fonts, "light");
         font-size: 18px;
     }
 
     label {
-        font-family: $medium;
+        font-family: map-get($fonts, "medium");
         margin: 2% 0%;
     }
     
     input {
-        font-family: $light;
+        font-family: map-get($fonts, "light");
         border-radius: 25px;
         padding: 2%;
         color: darkgrey;
@@ -27,7 +34,7 @@ form {
     }
 
     textarea {
-        font-family: $light;
+        font-family: map-get($fonts, "light");
         color: #706D6D;
         border: 1px solid;
         border-radius: 20px;
@@ -35,14 +42,14 @@ form {
     }
 
     #enviar {
-        background-color: $fucsia;
-        color: $blanco;
+        background-color: map-get($colores, "fucsia");
+        color: map-get($colores, "blanco");
         width: 50%;
         margin: 2% 25%;
     }
     
     #enviar:hover {
-        background-color: $verde;
+        background-color: map-get($colores, "verde");
     }
 
 

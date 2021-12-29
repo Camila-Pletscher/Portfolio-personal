@@ -1,14 +1,26 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
+@mixin titulos {
+    font-family: map-get($fonts , gorditas );
+    font-size: 40px;
+    color: map-get($colores , "lila" );
+    text-align: left;
+}
 
 
 .bodyPages {
     margin: 0;
     padding: 0;
-    width: $ancho-total;
-    max-width: $ancho-total;
+    width: $anchoMax;
+    max-width: $anchoMax;
 }
 
 .nav-pages {
-    background-color: $lila;
+    background-color: map-get($colores, "lila");
     
 }
 
@@ -19,8 +31,8 @@
     right: 3%;
 
     a &-pag {
-        background-color: $lila;
-        width: $ancho-total;
+        background-color: map-get($colores, "lila");
+        width: $anchoMax;
         animation-name: logo-color;
         animation-duration: 2s;
         animation-delay: 2s;
@@ -30,15 +42,15 @@
 }
 
 .ilust-quien {
-    width: $ancho-total;
+    width: $anchoMax;
 }
 
 h2 {
-    @include titulos();        
+    @include titulos;        
 }
 
 .textosQuienSoy {
-    font-family: $extra-light;
+    font-family: map-get($colores, "elight");
     font-size: 17px;
     margin: 2% 0 10%;
     text-align: left;
@@ -47,14 +59,14 @@ h2 {
     }
 
 #finalQuienSoy {
-    font-family: $medium;
-    color: $lila;
+    font-family: map-get($fonts, "medium");
+    color: map-get($colores, "lila");
     font-size: 20px;
 }
 
 .quienSoy__recuadro {
     /* background-color: #F677A3; */
-    background-image: linear-gradient(to right ,$verde, $lila, $fucsia );
+    background-image: linear-gradient(to right ,map-get($colores, "verde"), map-get($colores, "lila"), map-get($colores, "fucsia") );
     background-repeat: repeat;
     padding: 1.3em;
     display: flex;
@@ -65,12 +77,12 @@ h2 {
     animation-timing-function: linear;
     
     .quienSoy__subtitulo {
-        font-family: $bold;
-        color: $blanco;
+        font-family: map-get($fonts, "bold");
+        color: map-get($colores, "blanco");
         margin: 0%;
 
         &-anio {
-            font-family: $medium-italic;
+            font-family: map-get($fonts, "medium-italic");
         }
     }
 
@@ -85,7 +97,7 @@ h2 {
 }
 
 .textosQuienSoy {
-    font-family: $extra-light;
+    font-family: map-get($fonts, "elight");
     font-size: 17px;
     margin: 2% 0 10%;
     text-align: left;

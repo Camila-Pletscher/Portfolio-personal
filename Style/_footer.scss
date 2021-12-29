@@ -1,15 +1,22 @@
+$colores: ("lila": #C6B5F8, "fucsia": #F677A3, "verde": #74D3C5, "blanco": #FFFFFF, "violeta": #7E5D93);
+
+$fonts: ("elight": Poppins-Extralight, "light": Poppins-Light, "regular": Poppins-Regular, "medium": Poppins-Medium, "medium-italic": Poppins-MediumItalic, "bold": Poppins-Bold, "black": Poppins-Black, "gorditas": Gorditas-Regular);
+
+$anchoMax: 100%;
+
+
 
 .footer__pages {
     background-color: #E5E5E5;
 
     &-preg {        
-            font-family: Poppins-Light;
+            font-family: map-get($fonts, "light");
             font-size: 1.5em;
             
     }
 
     &-button {
-        background-color: #F677A3;
+        background-color: map-get($colores, "fucsia");
         text-decoration: none;
         border-radius: 25px;
         padding: 10px 20px;
@@ -19,7 +26,7 @@
             a {
                 text-decoration: none;
                 color: #FFFFFF;
-                font-family: Poppins-Regular;
+                font-family: map-get($fonts, "regular");
 
                 
             }
@@ -30,7 +37,7 @@
 }
 
 .footer__pages-button:hover {
-    background-color: #74D3C5;
+    background-color: map-get($colores, "verde");
 }
 
 .icon-pag {
@@ -42,10 +49,10 @@
     background-color: #706D6D;
 
     &-copy {
-    font-family: Poppins-Light;
+    font-family: map-get($fonts, "light");
     font-size: 12px;
     background-color: #706D6D ;
-    color: #FFFFFF;
+    color: map-get($colores, "blanco");
     text-align: center;
     }
 }
