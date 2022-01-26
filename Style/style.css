@@ -213,7 +213,7 @@ h2 {
 }
 
 .icon-pag {
-  width: 50%;
+  width: 40%;
 }
 
 .derechos__contenedor {
@@ -262,7 +262,7 @@ h2 {
 }
 
 .subtitulosDesarrolloDisenio {
-  font-family: Poppins-Regular;
+  font-family: Gorditas-Regular;
   color: #C6B5F8;
   font-size: 26px;
   text-align: center;
@@ -308,19 +308,21 @@ h2 {
 }
 
 div .disenio__subtitulos {
-  font-family: Poppins-Regular;
+  font-family: Gorditas-Regular;
   color: #C6B5F8;
   font-size: 26px;
   text-align: center;
 }
 
 div .disenio__textos-proyectos {
+  font-family: Poppins-Extralight;
   font-size: 16px;
   text-align: center;
   margin: 10px 0px;
 }
 
 div .textosDesarrolloDisenio {
+  font-family: Poppins-Extralight;
   text-align: center;
 }
 
@@ -361,7 +363,7 @@ div .disenio__button-proyecto {
 }
 
 #tituloDestacadoDG {
-  font-family: Poppins-Regular;
+  font-family: Gorditas-Regular;
   color: #C6B5F8;
   font-size: 34px;
   margin: 1% 20%;
@@ -369,6 +371,7 @@ div .disenio__button-proyecto {
 }
 
 #textoDestacado {
+  font-family: Poppins-Extralight;
   font-size: 20px;
   margin: 2% 20%;
   text-align: center;

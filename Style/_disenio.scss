@@ -16,21 +16,21 @@ h2 {
 div {
 
     .disenio__subtitulos {
-        font-family: map-get($fonts, "regular");
+        font-family: map-get($fonts, "gorditas");
         color: map-get($colores, "lila");
         font-size: 26px;
         text-align: center;
     }
 
     .disenio__textos-proyectos {
-        font-family: map-get($fonts, "e-light");
+        font-family: map-get($fonts, "elight");
         font-size: 16px;
         text-align: center;
         margin: 10px 0px;
     }
 
     .textosDesarrolloDisenio {
-        font-family: map-get($fonts, "e-light");
+        font-family: map-get($fonts, "elight");
         text-align: center;
         
     }
@@ -86,7 +86,7 @@ div {
 
 
 #tituloDestacadoDG {
-    font-family: map-get($fonts, "regular");
+    font-family: map-get($fonts, "gorditas");
     color: map-get($colores, "lila");
     font-size: 34px;
     margin: 1% 20%;
@@ -94,7 +94,7 @@ div {
 }
 
 #textoDestacado {
-    font-family: map-get($fonts, "e-light");
+    font-family: map-get($fonts, "elight");
     font-size: 20px;
     margin: 2% 20%;
     text-align: center;
